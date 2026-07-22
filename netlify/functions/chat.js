@@ -80,7 +80,7 @@ exports.handler = async (event) => {
     { role: "user", parts: [{ text: userMessage }] }
   ];
 
-  const model = "gemini-2.5-flash"; // current free-tier model as of mid-2026
+  const model = "gemini-flash-lite-latest"; // Google's auto-updating alias — always points to the current stable Flash-Lite model, avoiding breakage when Google renames/retires versions
 
   try {
     const response = await fetch(

@@ -80,7 +80,7 @@ exports.handler = async (event) => {
     { role: "user", parts: [{ text: userMessage }] }
   ];
 
-  const model = "gemini-2.0-flash"; // fast + free-tier friendly on Google AI Studio
+  const model = "gemini-2.5-flash"; // current free-tier model as of mid-2026
 
   try {
     const response = await fetch(
